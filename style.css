@@ -1,38 +1,46 @@
-body 
-{
-  background-color: palevioletred;
+body {
+  background-color: #2e2e2e;
   margin: 0;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 200px;
 }
 
 .ball {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   animation: bounce 2s infinite;
 }
 
-.black {
-  background-color: black;
-  left: 550px;
+.blue-light {
+  background-color: #add8e6;
+  left: 20px;
 }
 
-.white {
-  background-color: white;
-  left: 650px;
+.blue-medium {
+  background-color: #6495ed;
+  left: 120px;
 }
 
-.grey {
-  background-color: grey;
-  left: 750px;
+.blue-dark {
+  background-color: #1e90ff;
+  left: 220px;
 }
 
 @keyframes bounce {
   0%, 100% {
-    transform: translateY(900px);
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-100px);
   }
 }
